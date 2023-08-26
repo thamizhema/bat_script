@@ -1,0 +1,11 @@
+@echo off
+
+start /b  cmd git add .
+set /p commit= Enter your commit here :
+
+start /b /wait cmd git commit -m "%commit%"
+ 
+start /b /wait cmd git push
+
+echo git update completed....
+pause
